@@ -1,6 +1,6 @@
 {
   "name": "spy-scroll",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A lightweight react scroll spy using intersection observer",
   "main": "dist/index.js",
   "repository": "git@github.com:su-sumit/scroll-spy.git",
