@@ -1,0 +1,42 @@
+{
+  "name": "spy-scroll",
+  "version": "1.0.1",
+  "description": "A lightweight react scroll spy using intersection observer",
+  "main": "dist/index.js",
+  "repository": "git@github.com:su-sumit/scroll-spy.git",
+  "author": "Sumi7 <16751801+su-sumit@users.noreply.github.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "rollup -c",
+    "start": "rollup -c -w"
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "component",
+    "scrollspy",
+    "scroll"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
+    "babel-core": "^6.26.3",
+    "babel-runtime": "^6.26.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "rollup": "^2.23.0",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-peer-deps-external": "^2.2.3"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "classnames": "^2.2.6"
+  }
+}
