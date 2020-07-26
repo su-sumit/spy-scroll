@@ -1,10 +1,10 @@
 {
   "name": "spy-scroll",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A lightweight react scroll spy using intersection observer",
   "main": "dist/index.min.js",
   "repository": "git@github.com:su-sumit/scroll-spy.git",
-  "author": "Sumi7 <16751801+su-sumit@users.noreply.github.com>",
+  "author": "su-sumit <16751801+su-sumit@users.noreply.github.com>",
   "license": "MIT",
   "scripts": {
     "build": "rollup -c",
@@ -37,7 +37,7 @@
     "dist"
   ],
   "dependencies": {
-    "prop-types": "^15.7.2",
-    "classnames": "^2.2.6"
+    "classnames": "^2.2.6",
+    "prop-types": "^15.7.2"
   }
 }
