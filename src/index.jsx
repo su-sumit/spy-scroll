@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react"
 import classNames from "classnames"
 import PropTypes from 'prop-types';
 
-ScrollSpy.propTypes = {
+SpyScroll.propTypes = {
   items: PropTypes.arrayOf(PropTypes.string).isRequired,
   currentClassName: PropTypes.string.isRequired,
   scrolledPastClassName: PropTypes.string,
@@ -11,7 +11,7 @@ ScrollSpy.propTypes = {
   offset: PropTypes.string,
 }
 
-ScrollSpy.defaultProps = {
+SpyScroll.defaultProps = {
   items: [],
   currentClassName: '',
   scrolledPastClassName: '',
@@ -20,7 +20,7 @@ ScrollSpy.defaultProps = {
   offset: '-25% 0px -35% 0px'
 }
 
-export default function ScrollSpy(props) {
+export default function SpyScroll(props) {
   const {
     items,
     currentClassName,

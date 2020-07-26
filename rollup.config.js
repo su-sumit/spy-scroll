@@ -7,8 +7,7 @@ export default {
   output: [
     {
       file: 'dist/index.min.js',
-      format: 'cjs',
-      exports: 'named'
+      format: 'esm'
     }
   ],
   external: [

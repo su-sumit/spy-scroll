@@ -2,7 +2,7 @@
 
 [![npm version](https://img.shields.io/npm/v/spy-scroll.svg?style=flat-square)](https://www.npmjs.com/package/spy-scroll)
 
-> Scrollspy a clone of [react-scrollspy](https://github.com/makotot/react-scrollspy) using Intersection observer.
+> SpyScroll a clone of [react-scrollspy](https://github.com/makotot/react-scrollspy) using Intersection observer.
 
 ## Why bother duplicating ?
 I wanted the active item to stay active until a new item start intersecting the offset. 
@@ -18,17 +18,17 @@ $ npm i spy-scroll
 ## Usage
 
 ```js
-import Scrollspy from 'spy-scroll'
+import SpyScroll from 'spy-scroll'
 
 ...
 
-<ScrollSpy items={['item-1', 'item-2', 'item-3']} currentClassName="active" scrolledPastClassName="past">
+<SpyScroll items={['item-1', 'item-2', 'item-3']} currentClassName="active" scrolledPastClassName="past">
   { items.map(item => (
     <li key={title} id={title} >
       <a to={url}>{title}</a>
     </li>
   ))}
-</ScrollSpy>
+</SpyScroll>
 
 ...
 ```
@@ -50,7 +50,7 @@ Class name that apply to the navigation elements that have been scrolled past [o
 
 ### `tag={ String | React element type }`
 
-HTML tag or React Component type for Scrollspy component if you want to use something other than `ul` [optional].
+HTML tag or React Component type for SpyScroll component if you want to use something other than `ul` [optional].
 
 ### `style={ Object }`
 
@@ -63,9 +63,9 @@ Offset value that adjusts to determine the elements to set active read more [her
 default: `-25% 0px -35% 0px`
 
 ```js
-  <ScrollSpy offset="-30% 0px -40% 0px">
+  <SpyScroll offset="-30% 0px -40% 0px">
     ...
-  </ScrollSpy>
+  </SpyScroll>
 ```
 
 ## Development
