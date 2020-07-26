@@ -7,9 +7,8 @@ ScrollSpy.propTypes = {
   currentClassName: PropTypes.string.isRequired,
   scrolledPastClassName: PropTypes.string,
   style: PropTypes.object,
-  componentTag: PropTypes.oneOfType([PropTypes.string, PropTypes.elementType]),
+  tag: PropTypes.oneOfType([PropTypes.string, PropTypes.elementType]),
   offset: PropTypes.string,
-  rootElm: PropTypes.string,
 }
 
 ScrollSpy.defaultProps = {
@@ -17,7 +16,7 @@ ScrollSpy.defaultProps = {
   currentClassName: '',
   scrolledPastClassName: '',
   style: {},
-  rootElm: 'ul',
+  tag: 'ul',
   offset: '-25% 0px -35% 0px'
 }
 
