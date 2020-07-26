@@ -2,7 +2,7 @@
 
 [![npm version](https://img.shields.io/npm/v/spy-scroll.svg?style=flat-square)](https://www.npmjs.com/package/spy-scroll)
 
-> Scrollspy component based on [react-scrollspy](https://github.com/makotot/react-scrollspy)
+> Scrollspy a clone of [react-scrollspy](https://github.com/makotot/react-scrollspy) using Intersection observer.
 
 ## Why bother duplicating ?
 My problem. My solution.
@@ -57,7 +57,7 @@ Style attribute to be passed to the generated &lt;ul/&gt; element [optional].
 
 ### `offset={ String }`
 
-Offset value that adjusts to determine the elements to set active read more [here] (https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver/rootMargin)[optional].
+Offset value that adjusts to determine the elements to set active read more [here](https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver/rootMargin) [optional].
 
 default: `-25% 0px -35% 0px`
 
@@ -70,7 +70,7 @@ default: `-25% 0px -35% 0px`
 ## Development
 
 ```sh
-$ git clone https://github.com/makotot/react-scrollspy.git
+$ git clone https://github.com/su-sumit/spy-scroll.git
 $ cd spy-scroll
 $ yarn i
 $ yarn start
