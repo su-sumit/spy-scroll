@@ -1,24 +1,25 @@
 import babel from 'rollup-plugin-babel'
-import pkg from './package.json'
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
+import { terser } from 'rollup-plugin-terser';
 
 export default {
   input: './src/index.jsx',
   output: [
     {
-      file: pkg.main,
+      file: 'dist/index.min.js',
       format: 'cjs',
       exports: 'named'
     }
   ],
   external: [
-    'react',
+    'classnames',
     'prop-types'
   ],
   plugins: [
     babel({
       exclude: 'node_modules/**'
     }),
-    peerDepsExternal()
+    peerDepsExternal(),
+    terser()
   ]
 }

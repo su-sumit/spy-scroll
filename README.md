@@ -5,7 +5,8 @@
 > Scrollspy a clone of [react-scrollspy](https://github.com/makotot/react-scrollspy) using Intersection observer.
 
 ## Why bother duplicating ?
-My problem. My solution.
+I wanted the active item to stay active until a new item start intersecting the offset. 
+`eg: My blogs .mdx files table of content items switch from active to inactive whenever they go out of viewport but the content related to that heading is still in viewport.`
 
 ## Install
 
