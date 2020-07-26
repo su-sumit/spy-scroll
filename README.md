@@ -6,7 +6,8 @@
 
 ## Why bother duplicating ?
 I wanted the active item to stay active until a new item start intersecting the offset. 
-`eg: My blogs .mdx files table of content items switch from active to inactive whenever they go out of viewport but the content related to that heading is still in viewport.`
+
+`eg: My blog's .mdx files table of content items switch from active to inactive whenever the heading linked to them go out of viewport but the content related to that heading is still in viewport.`
 
 ## Install
 
@@ -22,8 +23,8 @@ import SpyScroll from 'spy-scroll'
 
 ...
 
-<SpyScroll items={['item-1', 'item-2', 'item-3']} currentClassName="active" scrolledPastClassName="past">
-  { items.map(item => (
+<SpyScroll items={[{title: 'item-1', url:'#item-1'}, {title: 'item-2', url:'#item-2'}, {title: 'item-3', url:'#item-3'}]} currentClassName="active" scrolledPastClassName="past">
+  { items.map(({title, url}) => (
     <li key={title} id={title} >
       <a to={url}>{title}</a>
     </li>
